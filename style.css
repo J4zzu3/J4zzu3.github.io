@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color:#FFF1E6;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+/*boton de navar menu principal beibe*/
+
+.botonmenu {
+
+    display: inline-block;    
+    padding: 12px 24px;       
+    background-color: #263D32;
+    color: white;             
+    text-decoration: none;    
+    border-radius: 10px;      
+    cursor: pointer;         
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+.botonmenu:hover{
+    background-color: #8B684B;
+    transform: translateY(-5px);
+}
+
+
+
+.menuboton a{
+
+    font-family:"Montserrat", sans-serif;
+    color:white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+
+
+}
+
+
+
+.navbar{
+    display:flex;   
+    align-items:center;
+    justify-content:space-around;
+    background-color:#F8E8D8;
+}
+
+.navbar img {
+    width:300px;
+}
+
+
+.menu-1{
+    display:flex;
+    gap: 40px;
+    margin-left: 20cm;
+}
+
+
+.menu-1 a{
+
+    font-size:18px;
+    text-decoration:none;
+    color:#242424;
+    font-weight: 600;
+    transition:color 0.3s ease,
+
+}
+
+.menu-1 a:hover{
+    color:#263D32 ;
+}
+
+.menu-1 a {
+    text-decoration: none;
+    color: #242424;
+    font-family: sans-serif;
+    position: relative;
+    padding: 5px 0;
+}
+
+
+.menu-1 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0); 
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #263D32; 
+    transform-origin: bottom center; 
+    transition: transform 0.25s ease-out; 
+}
+
+
+.menu-1 a:hover::after {
+    transform: scaleX(1); 
+}
+
+
+
+/*customizamos a hero jeje*/
+
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding-left:5%;
+    text-align:left;
+    box-sizing:border-box;
+    height:80vh;
+    background: url(/imagenes/HeroAstrid.jpeg);
+    background-size: cover;
+    background-position: center;
+    gap: 30px;
+}
+
+.hero h1{
+    
+    font-size:67px;
+    color:#F4EFE5;
+    font-weight:500;
+    
+}
+
+.hero p{
+
+    font-size:18px;
+    color:#F4EFE5;
+    font-weight:450;
+
+
+}
+
+
+
+.heroboton{
+    display: inline-block;    
+    padding: 12px 24px;       
+    background-color: #263D32;
+    color: white;             
+    text-decoration: none;    
+    border-radius: 10px;       
+    cursor: pointer;          
+    transition: background-color 0.3s ease,
+            transform 0.3s ease;
+}
+
+
+.heropadre{
+
+    margin-top:50px
+}
+.heroboton:hover {
+    background-color: #8B684B;
+    transform: translateY(-5px);    
+}
+
+/* Las cualidades*/
+
+.cualidades{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color:#F8E8D8;
+    height:80px;
+
+}
+
+.icono1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid #263D32;
+    width:10cm;
+    /*background-color: aqua;*/;
+    
+}
+
+.icono1 p{
+    text-align: center;
+    font-size:15px;
+    color:#263D32;
+    font-weight: 600;
+}
+
+.icono1 img{
+    width:50px;
+}
+
+/*icono 2*/
+.icono2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid #263D32;
+    width:10cm;
+        /*background-color: aqua;*/;
+    padding-right:2cm;
+}
+
+.icono2 p{
+    text-align: center;
+    font-size:15px;
+    color:#263D32;
+    font-weight: 600;
+}
+
+.icono2 img{
+    width:50px;
+}
+
+
+/*icono 3*/
+.icono3{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid #263D32;
+    width:10cm;
+        /*background-color: aqua;*/
+    padding-right:2cm;
+}
+
+.icono3 p{
+    text-align: center;
+    font-size:15px;
+    color:#263D32;
+    font-weight: 600;
+}
+
+.icono3 img{
+    width:50px;
+}
+
+/*icono4*/
+
+.icono4{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:10cm;
+        /*background-color: aqua;*/;
+    padding-right:2cm;
+}
+
+.icono4 p{
+    text-align: center;
+    font-size:15px;
+    color:#263D32;
+    font-weight: 600;
+}
+
+.icono4 img{
+    width:50px;
+}
+
+
+/*Que somos*/
+
+
+.acerca{
+    margin-top:50px;
+    display:flex;
+    gap:5cm
+
+}
+
+.definicion{
+
+padding-left:5%;
+}
+
+.definicion h2{
+    text-align:left;
+    font-size:30px
+
+}
+
+.definicion p{
+    font-size:18px;
+    font-weight:500;
+}
+
+
+.founder{
+    margin-left:100px
+}
+
+.founder img{
+
+    width: 400px;
+    border-radius:50px;
+
+
+}
+
+.sub{
+}
+
+.acercaboton{
+    display: inline-block;    
+    padding: 12px 24px;       
+    background-color: #263D32
+    color: white;             
+    text-decoration: none
+    border-radius: 10px;       
+    cursor: pointer;          
+    transition: background-color 0.3s ease,
+            transform 0.3s ease;
+}
+
+
+.acercabotonpadre{
+
+    margin-top:50px
+}
+.acercaboton:hover {
+    background-color: #8B684B;
+    transform: translateY(-5px);
+}
+
