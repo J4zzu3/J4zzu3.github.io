@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrid | Asesoría Contable Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <a href="#inicio" class="logo">
+            <img src="img/logito.png" alt="Logo Astrid Contable">
+    </a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Quiénes Somos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto" class="btn-primary">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Tranquilidad financiera para tu <span>empresa y futuro</span></h1>
+            <p>Asesoría contable integral, precisa y elegante. Nos encargamos de los números para que tú te enfoques en hacer crecer tu negocio.</p>
+            <a href="#contacto" class="btn-primary btn-large">Agendar Asesoría</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="about-text">
+            <h2>Quiénes Somos</h2>
+            <div class="divider"></div>
+            <p>Con años de experiencia en el sector financiero, en el estudio de Astrid brindamos soluciones contables a medida tanto para empresas consolidadas como para personas naturales. Nuestro compromiso es la transparencia, la ética profesional y la optimización de tus recursos.</p>
+        </div>
+        <div class="about-image">
+            <img src="img/jefa.jpeg" alt="Equipo de trabajo contable Astrid">
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="divider center"></div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h3>Declaración de Impuestos</h3>
+                <p>Gestión fiscal precisa y oportuna para evitar multas y optimizar tu carga tributaria.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Constitución de Pymes</h3>
+                <p>Te acompañamos desde el primer paso legal y tributario para formalizar tu empresa.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>Auditorías</h3>
+                <p>Revisión exhaustiva de tus estados financieros para garantizar total transparencia.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-users-gear"></i>
+                <h3>Gestión de Planillas</h3>
+                <p>Cálculo exacto de nóminas, beneficios sociales y cumplimiento laboral vigente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonios) -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="divider center"></div>
+        <div class="testimoials-grid">
+            <div class="testimonial-card">
+                <p>"La asesoría de Astrid transformó la manera en que manejamos nuestras finanzas. Totalmente recomendados por su profesionalismo."</p>
+                <h4>- Empresa Demo S.A.C.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Rápidos, eficientes y siempre dispuestos a resolver mis dudas fiscales como trabajador independiente."</p>
+                <h4>- Cliente Demo</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <h2>Impulsa tu crecimiento</h2>
+            <p>Déjanos tus datos y nos pondremos en contacto contigo de inmediato.</p>
+            
+            <form id="whatsappForm" class="contact-form">
+                <div class="input-group">
+                    <label for="tipoCliente">¿Eres empresa o persona natural?</label>
+                    <select id="tipoCliente" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="empresa">Empresa</option>
+                        <option value="persona">Persona Natural</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="nombre">Nombre o Razón Social</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <button type="submit" class="btn-primary w-full">
+                    <i class="fa-brands fa-whatsapp"></i> Conectar vía WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Astrid Contable. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/51982628260" target="_blank" class="float-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
